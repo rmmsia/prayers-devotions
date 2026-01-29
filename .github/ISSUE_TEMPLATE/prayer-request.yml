@@ -1,0 +1,32 @@
+name: New Prayer Request
+description: Submit a request to add a prayer or devotion to the repository.
+title: "[Prayer Request] - "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your interest in contributing a prayer or devotion to this repository! Please fill out the details below to help us understand your request.
+  - type: input
+    id: contact
+    attributes:
+      label: Your Contact Information
+      description: Provide your email or Telegram handle so we can reach out if we have questions.
+      placeholder: e.g. "your.email@example.com", "@yourtelegramhandle"
+    validations:
+      required: true
+  - type: input
+    id: prayer-title
+    attributes:
+      label: Title of the Prayer/Devotion
+      description: Provide a concise title for the prayer or devotion.
+      placeholder: e.g., "Novena to the Holy Spirit"
+    validations:
+      required: true
+  - type: textarea
+    id: prayer-content
+    attributes:
+      label: Prayer/Devotion Content
+      description: Please provide the full text of the prayer or devotion you would like to submit. If it is too long, consider providing a link to an external source.
+      placeholder: "Enter the prayer or devotion text here..."
+    validations:
+      required: true
